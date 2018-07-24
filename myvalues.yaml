@@ -6,10 +6,7 @@ repository: "https://github.com/chrisvugrinec/brigade-helloworld"
 
 # The definitive clone URL. This can be any Git-supported URL format.
 # You may set this to "" for no clone URL.
-cloneURL: "https://github.com/deis/empty-testbed.git"
-
-# OPTIONAL: initGitSubmodules will recursively initialize all submodules in the repository. Default: false
-# initGitSubmodules: "false"
+cloneURL: "https://github.com/chrisvugrinec/brigade-helloworld"
 
 # OPTIONAL: defaultScript is the brigade.js used by default when your VCS repo misses a brigade.js
 # in it.
