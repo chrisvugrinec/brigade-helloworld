@@ -8,14 +8,12 @@ repository: "https://github.com/chrisvugrinec/brigade-helloworld"
 # You may set this to "" for no clone URL.
 cloneURL: "https://github.com/chrisvugrinec/brigade-helloworld"
 
-# OPTIONAL: defaultScript is the brigade.js used by default when your VCS repo misses a brigade.js
-# in it.
-# defaultScript: |
-#   const { events, Job } = require("brigadier")
-#   function run(e, project) {
-#     console.log("hello default script")
-#   }
-#   events.on("run", run)
+defaultScript: |
+  const { events, Job } = require("brigadier")
+  function run(e, project) {
+    console.log("hello default script")
+  }
+  events.on("run", run)
 
 # Used by GitHub and other services to compute hook HMACs.
 sharedSecret: "IBrakeForSeaBeasts"
