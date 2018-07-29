@@ -1,8 +1,12 @@
-const { events } = require("brigadier")
+const { events, Job } = require("brigadier")
 
- 
 events.on("exec", () => {
-  j = new Job("example")
-  j.env= {"MY_ENV_VAR": p.secrets.myVar}
-  console.log("Hello world, secret value: "+$MY_ENV_VAR)
+  var hello = new Job("hello", "alpine:3.4")
+  hello.env= {"MY_ENV_VAR": p.secrets.myVar}
+  hello.tasks = [
+    "echo Hello",
+    "echo World $MY_ENV_VAR"
+  ]
+
+  hello.run()
 })
