@@ -18,13 +18,6 @@ defaultScript: |
 # Used by GitHub and other services to compute hook HMACs.
 sharedSecret: "IBrakeForSeaBeasts"
 
-# OPTIONAL: Use this to have Brigade update your project about the build.
-# This is REQUIRED for the GitHub gateway, but optional otherwise.
-github:
-#   token: "github oauth token"
-#   ENTERPRISE: For enterprise GitHub customers, set both of these as well.
-#   baseURL: "https://internal.github.url/foo"
-#   uploadURL: "https://internal.github.url/foo"
 
 # OPTIONAL: Use this for private repositories
 # This is the PRIVATE key that Brigade will use to clone a private repo.
@@ -56,7 +49,7 @@ github:
 # Inside of the job's pod, $MY_ENV_VAR = "super awesome"
 secrets:
   # Example:
-  # username: hello
+  username: cvugrinec
 
 # OPTIONAL: Namespace into which builds will be deployed.
 # Using this has implications for what you can access, so don't set this unless
